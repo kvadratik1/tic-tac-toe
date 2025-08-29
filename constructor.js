@@ -28,20 +28,20 @@ export default function Board() {
         this.board[2][1] === "X" &&
         this.board[2][2] === "X") ||
       (this.board[0][0] === "X" &&
-        this.board[0][1] === "X" &&
-        this.board[0][2] === "X") ||
-      (this.board[1][0] === "X" &&
+        this.board[1][0] === "X" &&
+        this.board[2][0] === "X") ||
+      (this.board[0][1] === "X" &&
         this.board[1][1] === "X" &&
-        this.board[1][2] === "X") ||
-      (this.board[2][0] === "X" &&
-        this.board[2][1] === "X" &&
+        this.board[2][1] === "X") ||
+      (this.board[0][2] === "X" &&
+        this.board[1][2] === "X" &&
         this.board[2][2] === "X") ||
       (this.board[0][0] === "X" &&
         this.board[1][1] === "X" &&
         this.board[2][2] === "X") ||
-      (this.board[2][0] === "X" &&
+      (this.board[0][2] === "X" &&
         this.board[1][1] === "X" &&
-        this.board[0][2] === "X")
+        this.board[2][0] === "X")
     ) {
       this.winner = "X";
     } else if (
@@ -55,20 +55,20 @@ export default function Board() {
         this.board[2][1] === "O" &&
         this.board[2][2] === "O") ||
       (this.board[0][0] === "O" &&
-        this.board[0][1] === "O" &&
-        this.board[0][2] === "O") ||
-      (this.board[1][0] === "O" &&
+        this.board[1][0] === "O" &&
+        this.board[2][0] === "O") ||
+      (this.board[0][1] === "O" &&
         this.board[1][1] === "O" &&
-        this.board[1][2] === "O") ||
-      (this.board[2][0] === "O" &&
-        this.board[2][1] === "O" &&
+        this.board[2][1] === "O") ||
+      (this.board[0][2] === "O" &&
+        this.board[1][2] === "O" &&
         this.board[2][2] === "O") ||
       (this.board[0][0] === "O" &&
         this.board[1][1] === "O" &&
         this.board[2][2] === "O") ||
-      (this.board[2][0] === "O" &&
+      (this.board[0][2] === "O" &&
         this.board[1][1] === "O" &&
-        this.board[0][2] === "O")
+        this.board[2][0] === "O")
     ) {
       this.winner = "O";
     } else if (this.stepsCounter === 9) {
