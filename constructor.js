@@ -92,8 +92,13 @@ export default function Board() {
       this.stepsCounter !== 9
     ) {
       this.board[position[0]][position[1]] = this.whoseTurn;
-      this.changeTurn();
+      this.stepsCounter++;
       this.checkIfGameOver();
+
+      if (this.winner === "") {
+        this.changeTurn();
+      }
+
       console.log(this.board);
       console.log(this.whoseTurn);
     } else return;
