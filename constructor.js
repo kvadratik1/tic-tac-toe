@@ -78,6 +78,8 @@ export default function Board() {
 
   this.resetBoard = function () {
     this.whoseTurn = "X";
+    this.winner = "";
+    this.stepsCounter = 0;
     this.board = [
       [, ,],
       [, ,],
